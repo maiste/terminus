@@ -1,0 +1,16 @@
+(library
+  (name backroom)
+  (public_name backroom)
+  (modules backroom))
+
+(library
+ (name backroom_hlc)
+ (public_name backroom-hlc)
+ (libraries backroom http-lwt-client)
+ (modules backroom_hlc))
+
+(library
+ (name backroom_cohttp)
+ (public_name backroom-cohttp)
+ (libraries backroom cohttp-lwt-unix)
+ (modules backroom_cohttp))
