@@ -55,3 +55,6 @@ module type S = sig
   (** [delete ~headers ~url] executes a request to the server as a [DELETE] call
       and returns the result as a {!string}. *)
 end
+
+module Mock = Mock
+(** @inline *)

@@ -1,7 +1,7 @@
 (library
   (name backroom)
   (public_name backroom)
-  (modules backroom))
+  (modules backroom mock))
 
 (library
  (name backroom_hlc)
