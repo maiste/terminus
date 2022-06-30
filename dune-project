@@ -21,7 +21,7 @@
     (odate (>= 0.6))
     (alcotest :with-test)
     (alcotest-lwt :with-test)
-    (ppx_deriving :with-test)
+    ppx_deriving
     (odoc :with-doc))
   (conflicts
     (result (< 1.5))))
