@@ -1,7 +1,9 @@
 (library
  (name terminus)
  (public_name terminus)
- (modules terminus mock))
+ (modules terminus mock)
+ (preprocess
+  (pps ppx_deriving.show)))
 
 (library
  (name terminus_hlc)
