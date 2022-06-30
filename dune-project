@@ -1,19 +1,19 @@
 (lang dune 3.0)
 (generate_opam_files true)
 
-(name backroom)
-(source (github maiste/backroom))
+(name terminus)
+(source (github maiste/terminus))
 (license MIT)
 (authors
   "Étienne Marais <etienne@maiste.fr>")
 (maintainers
   "Étienne Marais <etienne@maiste.fr>")
-(documentation "maiste.github.io/backroom")
+(documentation "maiste.github.io/terminus")
 
 (package
-  (name backroom)
+  (name terminus)
   (synopsis "A Simple Backend to build RestAPI")
-  (description "Backroom provides the basic functionalities for a RestAPI requester.")
+  (description "Terminus provides the basic functionalities for a RestAPI requester.")
   (depends
     (ocaml (>= 4.08.0))
     (ezjsonm (>= 1.3.0))
@@ -27,10 +27,10 @@
     (result (< 1.5))))
 
 (package
-  (name backroom-hlc)
-  (synopsis "Backroom with the http-lwt-client request handler")
+  (name terminus-hlc)
+  (synopsis "Terminus with the http-lwt-client request handler")
   (description
-    "Backroom-hlc is an implementation of the Backroom library using http-lwt-client.")
+    "Terminus-hlc is an implementation of the Terminus library using http-lwt-client.")
   (depends
     http-lwt-client
     (httpaf-lwt-unix :with-test)
@@ -41,10 +41,10 @@
     (result (< 1.5))))
 
 (package
-  (name backroom-cohttp)
-  (synopsis "Backroom with the cohttp-lwt-unix request handler")
+  (name terminus-cohttp)
+  (synopsis "Terminus with the cohttp-lwt-unix request handler")
   (description
-    "Backroom-cohttp is an implementation of the Equinoxe library using cohttp-lwt-unix.")
+    "Terminus-cohttp is an implementation of the Equinoxe library using cohttp-lwt-unix.")
   (depends
     cohttp-lwt-unix
     (httpaf-lwt-unix :with-test)

@@ -24,5 +24,5 @@
 
 (** It provides an API call system relying on Cohttp. *)
 
-include Backroom.S with type 'a io = 'a Lwt.t
+include Terminus.S with type 'a io = 'a Lwt.t
 (** @inline *)

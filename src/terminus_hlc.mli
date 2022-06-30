@@ -24,5 +24,5 @@
 
 (** It provides an API call system relying on {!Http_lwt_client}. *)
 
-include Backroom.S with type 'a io = ('a, [ `Msg of string ]) Lwt_result.t
+include Terminus.S with type 'a io = ('a, [ `Msg of string ]) Lwt_result.t
 (** @inline *)

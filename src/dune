@@ -1,16 +1,16 @@
 (library
-  (name backroom)
-  (public_name backroom)
-  (modules backroom mock))
+  (name terminus)
+  (public_name terminus)
+  (modules terminus mock))
 
 (library
- (name backroom_hlc)
- (public_name backroom-hlc)
- (libraries backroom http-lwt-client)
- (modules backroom_hlc))
+ (name terminus_hlc)
+ (public_name terminus-hlc)
+ (libraries terminus http-lwt-client)
+ (modules terminus_hlc))
 
 (library
- (name backroom_cohttp)
- (public_name backroom-cohttp)
- (libraries backroom cohttp-lwt-unix)
- (modules backroom_cohttp))
+ (name terminus_cohttp)
+ (public_name terminus-cohttp)
+ (libraries terminus cohttp-lwt-unix)
+ (modules terminus_cohttp))

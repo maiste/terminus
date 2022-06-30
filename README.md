@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>Backroom</h1>
+  <h1>Terminus</h1>
   <br />
   <strong>Another API Backend manager, written in OCaml</strong>
 </div>
@@ -12,4 +12,4 @@ TODO
 
 ## Documentation
 
-API documentation can be found online on the [project GitHub Pages](https://maiste.github.io/backroom)
+API documentation can be found online on the [project GitHub Pages](https://maiste.github.io/terminus)
