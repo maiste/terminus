@@ -15,7 +15,7 @@ jobs:
         with:
           ocaml-version: '4.12.0'
       - name: Dependencies
-        run: opam install -d . --deps-only
+        run: opam install -d -t . --deps-only
       - name: Building docs
         run: opam exec -- dune build @doc
 
