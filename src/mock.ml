@@ -48,7 +48,7 @@ struct
   let find key =
     try Mocks.find key mocks
     with Not_found ->
-      failwith (Printf.sprintf "Not_found %s" (show_query key))
+      failwith (Printf.sprintf "Not_found %s" ("TODO"))
 
   let compute ~headers ~url fn =
     check_headers headers;
