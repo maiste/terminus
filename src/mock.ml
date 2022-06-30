@@ -74,10 +74,12 @@ struct
     compute ~headers ~url (fun ~path -> Put (path, body))
 end
 
+module type Mock_backend = S.Intf with type 'a io = 'a
+
 let mock ~address ~expected_headers ~expect () =
   let module H = struct
     let address = address
     let expect = expect
     let expected_headers = expected_headers
   end in
-  (module Http_mock (H) : S.Intf)
+  (module Http_mock (H) : Mock_backend)
