@@ -1,7 +1,7 @@
 (library
-  (name terminus)
-  (public_name terminus)
-  (modules terminus mock))
+ (name terminus)
+ (public_name terminus)
+ (modules terminus mock))
 
 (library
  (name terminus_hlc)
