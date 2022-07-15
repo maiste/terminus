@@ -2,12 +2,10 @@
  (package terminus-hlc)
  (name hlc_test)
  (modules hlc_test)
- (libraries terminus-hlc
-            helpers))
+ (libraries terminus-hlc helpers))
 
 (test
  (package terminus-cohttp)
  (name cohttp_test)
  (modules cohttp_test)
- (libraries terminus-cohttp
-            helpers))
+ (libraries terminus-cohttp helpers))

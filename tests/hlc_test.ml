@@ -3,7 +3,7 @@ let port = 4546
 open Helpers
 
 module Test =
-    Generator.MakeTest
+  Generator.MakeTest
     (Terminus_hlc)
     (struct
       let port = port
