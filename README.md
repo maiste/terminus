@@ -1,7 +1,7 @@
 <div align="center">
   <h1>Terminus</h1>
   <br />
-  <strong>Another API Backend manager, written in OCaml</strong>
+  <strong>Another Rest API http client manager, written in OCaml</strong>
 </div>
 
 <hr />
