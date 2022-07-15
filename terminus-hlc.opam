@@ -2,7 +2,7 @@
 opam-version: "2.0"
 synopsis: "Terminus with the http-lwt-client request handler"
 description:
-  "Terminus-hlc is an implementation of the Terminus library using http-lwt-client."
+  "Terminus-hlc is an implementation of the Terminus specifications using http-lwt-client."
 maintainer: ["Étienne Marais <etienne@maiste.fr>"]
 authors: ["Étienne Marais <etienne@maiste.fr>"]
 license: "MIT"

@@ -2,7 +2,7 @@
 opam-version: "2.0"
 synopsis: "Terminus with the cohttp-lwt-unix request handler"
 description:
-  "Terminus-cohttp is an implementation of the Equinoxe library using cohttp-lwt-unix."
+  "Terminus-cohttp is an implementation of the Terminus specification using cohttp-lwt-unix."
 maintainer: ["Étienne Marais <etienne@maiste.fr>"]
 authors: ["Étienne Marais <etienne@maiste.fr>"]
 license: "MIT"

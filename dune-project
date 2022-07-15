@@ -12,8 +12,8 @@
 
 (package
   (name terminus)
-  (synopsis "A Simple Backend to build RestAPI")
-  (description "Terminus provides the basic functionalities for a RestAPI requester.")
+  (synopsis "A generic client to interact with Rest API")
+  (description "Terminus provides the basic functionalities for a Rest API requester.")
   (depends
     (ocaml (>= 4.08.0))
     (ezjsonm (>= 1.3.0))
@@ -30,7 +30,7 @@
   (name terminus-hlc)
   (synopsis "Terminus with the http-lwt-client request handler")
   (description
-    "Terminus-hlc is an implementation of the Terminus library using http-lwt-client.")
+    "Terminus-hlc is an implementation of the Terminus specifications using http-lwt-client.")
   (depends
     http-lwt-client
     (httpaf-lwt-unix :with-test)
@@ -44,7 +44,7 @@
   (name terminus-cohttp)
   (synopsis "Terminus with the cohttp-lwt-unix request handler")
   (description
-    "Terminus-cohttp is an implementation of the Equinoxe library using cohttp-lwt-unix.")
+    "Terminus-cohttp is an implementation of the Terminus specification using cohttp-lwt-unix.")
   (depends
     cohttp-lwt-unix
     (httpaf-lwt-unix :with-test)
