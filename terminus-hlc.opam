@@ -12,6 +12,7 @@ bug-reports: "https://github.com/maiste/terminus/issues"
 depends: [
   "dune" {>= "3.0"}
   "http-lwt-client"
+  "terminus"
   "httpaf-lwt-unix" {with-test}
   "alcotest" {with-test}
   "alcotest-lwt" {with-test}

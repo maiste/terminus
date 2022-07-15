@@ -33,6 +33,7 @@
     "Terminus-hlc is an implementation of the Terminus specifications using http-lwt-client.")
   (depends
     http-lwt-client
+    terminus
     (httpaf-lwt-unix :with-test)
     (alcotest :with-test)
     (alcotest-lwt :with-test)
@@ -46,6 +47,7 @@
   (description
     "Terminus-cohttp is an implementation of the Terminus specification using cohttp-lwt-unix.")
   (depends
+    terminus
     cohttp-lwt-unix
     (httpaf-lwt-unix :with-test)
     (alcotest :with-test)
