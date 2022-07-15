@@ -1,0 +1,35 @@
+name: Continuous Integration
+
+on: push
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          - ubuntu-latest
+        packages: [ '.' ]
+        ocaml-compiler:
+          - 4.13.x
+        include:
+          - os: macos-latest
+            ocaml-compiler: 4.13.x
+            packages: '.'
+
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Checkout on branch
+        uses: actions/checkout@v2
+      - name: Use OCaml ${{ matrix.ocaml-compiler }}
+        uses: ocaml/setup-ocaml@v2
+        with:
+          ocaml-compiler: ${{ matrix.ocaml-compiler }}
+          opam-local-packages: $${ matrix.opam-local-packages }}
+          opam-depext-flags: --with-test
+      - name: Pin dependencies
+        run: opam pin add terminus.dev -n . && opam pin add terminus-cohttp.dev -n . && opam pin add terminus-hlc.dev -n .
+      - name: Install opam packages
+        run: opam install ${{ matrix.packages }} --with-test --deps-only
+      - name: Run install - check - test
+        run: opam exec -- dune build @install @check @runtest
