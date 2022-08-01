@@ -15,7 +15,7 @@
   (synopsis "A generic client to interact with Rest API")
   (description "Terminus provides the basic functionalities for a Rest API requester.")
   (depends
-    (ocaml (>= 4.08.0))
+    (ocaml (and (>= 4.08.0) (< 5.0.0)))
     (ezjsonm (>= 1.3.0))
     (lwt (>= 5.3.0))
     (odate (>= 0.6))
