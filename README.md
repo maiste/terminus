@@ -21,6 +21,12 @@ To install a `dev` version of _Terminus_, you can install it via pinning:
 $ opam pin add terminus.dev https://github.com/maiste/terminus.git
 ```
 
+To install the last version:
+```
+opam install terminus
+```
+
+
 ### Usage
 
 _Terminus_ contains two types of modules. The first one is the `Terminus` module which contains the specifications for an REST API backend. The other ones are `Terminus-*` which implement this specification with an ocaml http client.
