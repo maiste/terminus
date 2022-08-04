@@ -1,3 +1,2 @@
-# Terminus documentation
-
 - [main](./main)
+- [0.1.0](./0.1.0)
