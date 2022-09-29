@@ -11,7 +11,7 @@ doc: "maiste.github.io/terminus"
 bug-reports: "https://github.com/maiste/terminus/issues"
 depends: [
   "dune" {>= "3.0"}
-  "terminus"
+  "terminus" {= version}
   "cohttp-lwt-unix"
   "httpaf-lwt-unix" {with-test}
   "alcotest" {with-test}
