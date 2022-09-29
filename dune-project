@@ -15,12 +15,9 @@
   (synopsis "A generic client to interact with Rest API")
   (description "Terminus provides the basic functionalities for a Rest API requester.")
   (depends
-    (ocaml (and (>= 4.08.0) (< 5.0.0)))
+    (ocaml (>= 4.08.0))
     (ezjsonm (>= 1.3.0))
-    (lwt (>= 5.3.0))
     (odate (>= 0.6))
-    (alcotest :with-test)
-    (alcotest-lwt :with-test)
     ppx_deriving
     (odoc :with-doc))
   (conflicts
@@ -33,10 +30,10 @@
     "Terminus-hlc is an implementation of the Terminus specifications using http-lwt-client.")
   (depends
     (terminus (= :version))
+    (ocaml (and (>= 4.08.0) (< 5.0.0)))
     http-lwt-client
     (httpaf-lwt-unix :with-test)
     (alcotest :with-test)
-    (alcotest-lwt :with-test)
     (odoc :with-doc))
   (conflicts
     (result (< 1.5))))
@@ -48,11 +45,10 @@
     "Terminus-cohttp is an implementation of the Terminus specification using cohttp-lwt-unix.")
   (depends
     (terminus (= :version))
+    (ocaml (and (>= 4.08.0) (< 5.0.0)))
     cohttp-lwt-unix
     (httpaf-lwt-unix :with-test)
     (alcotest :with-test)
-    (alcotest-lwt :with-test)
     (odoc :with-doc))
   (conflicts
     (result (< 1.5))))
-
