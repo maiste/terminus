@@ -31,7 +31,7 @@
   (depends
     (terminus (= :version))
     (ocaml (and (>= 4.08.0) (< 5.0.0)))
-    http-lwt-client
+    (http-lwt-client (<= 0.8.0))
     (httpaf-lwt-unix :with-test)
     (alcotest :with-test)
     (odoc :with-doc))
