@@ -12,10 +12,10 @@ bug-reports: "https://github.com/maiste/terminus/issues"
 depends: [
   "dune" {>= "3.0"}
   "terminus" {= version}
-  "http-lwt-client"
+  "ocaml" {>= "4.08.0" & < "5.0.0"}
+  "http-lwt-client" {< "0.1.0"}
   "httpaf-lwt-unix" {with-test}
   "alcotest" {with-test}
-  "alcotest-lwt" {with-test}
   "odoc" {with-doc}
 ]
 conflicts: [
